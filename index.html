@@ -48,6 +48,28 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        /* Çalışmalarım bölümü stil */
+        .work-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .work-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .work-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
@@ -105,6 +127,40 @@
             </div>
         </div>
     </main>
+
+    <!-- Çalışmalarım Bölümü -->
+    <section class="work-section">
+        <h3>Yaptıklarım</h3>
+        <p>Burada benim çeşitli projelerimi bulabilirsiniz. Detaylar için hakkımda kısmına tıklayın.</p>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <img src="Varlıklar/foto1.jpg" alt="Proje 1">
+                        <div class="card-body">
+                            <h5>E-Spor</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <img src="Varlıklar/foto2.jpg" alt="Proje 2">
+                        <div class="card-body">
+                            <h5>Yazılım</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-card">
+                        <img src="Varlıklar/foto3.jpg" alt="Proje 3">
+                        <div class="card-body">
+                            <h5>İçerik Üretimi</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
