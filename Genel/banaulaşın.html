@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bana Ulaşın</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Genel Stil */
+        body {
+            background-color: #f9fafc; /* Hafif gri arka plan */
+        }
+
+        /* Header Stili */
+        header {
+            background: linear-gradient(to right, #4a5568, #2d3748); /* Koyu gri degrade */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        /* Kart ve Form Stili */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Butonu */
+        .btn-primary {
+            background-color: #4a5568;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #2d3748;
+        }
+
+        /* Footer Stili */
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #a0aec0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Bölümü -->
+    <header>
+        <h1>Bana Ulaşın</h1>
+        <p class="lead">Sorularınız veya önerileriniz için benimle iletişime geçebilirsiniz.</p>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main class="container my-5">
+        <!-- İletişim Bilgileri -->
+        <section class="card shadow-lg p-4 mb-4 bg-white rounded text-center">
+            <h3 class="mb-3">📧 İletişim Bilgilerim</h3>
+            <p><strong>Email:</strong> <a href="mailto:hegezkaan@icloud.com" class="text-decoration-none">hegezkaan@icloud.com</a></p>
+            <p><strong>TSelefon:</strong> <a href="tel:05300666428" class="text-decoration-none">0530 066 6428</a></p>
+        </section>
+
+        <!-- İletişim Formu -->
+        <section class="card shadow-lg p-4 bg-white rounded">
+            <h3 class="mb-3 text-center">💬 İletişim Formu</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="ad" class="form-label">Adınız</label>
+                    <input type="text" class="form-control" id="ad" placeholder="Adınızı girin" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Adresiniz</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email adresinizi girin" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mesaj" class="form-label">Mesajınız</label>
+                    <textarea class="form-control" id="mesaj" rows="4" placeholder="Mesajınızı yazın" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tüm Hakları Saklıdır.</p>
+        <a href="/index.html">Ana Sayfaya Dön</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
